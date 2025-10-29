@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Game & Animations</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Game & Animations</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery & DOM</a> |
+      <a href="game.html">Game & Animations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel" id="guess-game">
+      <h2>Игра: Угадай число (1–100)</h2>
+      <p id="game-status">Нажми "Новая игра" чтобы начать</p>
+      <input id="guess-input" type="number" min="1" max="100" placeholder="Введите число" />
+      <button id="guess-btn">Угадать</button>
+      <button id="new-game">Новая игра</button>
+      <p id="attempts">Ходов: 0</p>
+    </section>
+
+    <section class="panel" id="bouncing">
+      <h2>Bouncing Ball</h2>
+      <div id="arena">
+        <div id="ball"></div>
+      </div>
+      <div style="margin-top:8px;">
+        <button id="start-ball">Start</button>
+        <button id="stop-ball">Stop</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ibrahim SE 2437</p>
+  </footer>
+</body>
+</html>
