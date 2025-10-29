@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery & DOM Manipulation</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gallery & DOM</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery & DOM</a> |
+      <a href="game.html">Game & Animations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel" id="dom-manip">
+      <h2>List (Add / Remove)</h2>
+      <ul id="item-list">
+        <li>Item 1 <button class="remove-item">Remove</button></li>
+        <li>Item 2 <button class="remove-item">Remove</button></li>
+      </ul>
+      <input id="new-item-text" placeholder="Текст нового элемента" />
+      <button id="add-item">Append Item</button>
+      <button id="prepend-item">Prepend Item</button>
+
+      <h3>Change image and link</h3>
+      <img id="target-image" src="photo/green.jpg" alt="img" width="500" height="300"/>
+      <br/>
+      <button id="change-image">Сменить картинку</button>
+
+      <p>Перейти: <a id="dynamic-link" href="https://lms.astanait.edu.kz/login/index.php?loginredirect=1" target="_blank">Example</a></p>
+      <button id="change-link">Сменить ссылку</button>
+    </section>
+
+    <section id="gallery">
+  <div class="thumbs">
+    <img class="thumb" src="photo/green.jpg" data-large="photo/green.jpg" alt="photo 1" width="400" height="250">
+    <img class="thumb" src="photo/moscva.jpg" data-large="photo/moscva.jpg" alt="photo 2" width="400" height="250">
+    <img class="thumb" src="photo/smoke.jpg" data-large="photo/smoke.jpg" alt="photo 3" width="400" height="250">
+  </div>
+
+  <div id="viewer">
+    <p>Кликни на миниатюру, чтобы увидеть фото</p>
+  </div>
+</section>
+
+
+
+    <section class="panel" id="accordion">
+      <h2>Accordion Menu</h2>
+      <div class="accordion">
+        <h3 class="acc-title">Section 1</h3>
+        <div class="acc-body"><p>Content 1</p></div>
+
+        <h3 class="acc-title">Section 2</h3>
+        <div class="acc-body"><p>Content 2</p></div>
+
+        <h3 class="acc-title">Section 3</h3>
+        <div class="acc-body"><p>Content 3</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ibrahim SE 2437</p>
+  </footer>
+</body>
+</html>
