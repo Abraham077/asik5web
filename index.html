@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>WebTech — Index (Selectors & Effects)</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1 id="main-title">asigment 5</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="gallery.html">Gallery and DOM</a> |
+      <a href="game.html">Game and animations</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="panel" id="selectors-css">
+      <h2>Selectors & CSS</h2>
+      <p id="demo-text">Этот текст будет изменён через jQuery.</p>
+      <div class="box large" data-info="box1">Box A (class .box)</div>
+      <div class="box large" data-info="box2">Box B (class .box)</div>
+      <button id="change-text">Изменить текст</button>
+      <button id="change-css">Изменить стиль</button>
+    </section>
+
+    <section class="panel" id="effects">
+      <h2>jQuery Effects</h2>
+      <p id="effect-par">Покажи / Спрячь меня!</p>
+      <button id="btn-hide">Hide</button>
+      <button id="btn-show">Show</button>
+      <button id="btn-toggle">Toggle</button>
+
+      <div style="margin-top:16px;">
+        <img id="effect-img" src="photo/green.jpg" alt="placeholder" width="500" height="300">
+        <br/>
+        <button id="fade-in">Fade In</button>
+        <button id="fade-out">Fade Out</button>
+        <button id="fade-toggle">Fade Toggle</button>
+      </div>
+
+      <div class="collapsible">
+        <h3>Collapsible Panel</h3>
+        <div class="collapsible-body">
+          <p>Содержимое панели, которое можно сворачивать и разворачивать.</p>
+        </div>
+        <button id="slide-toggle">Slide Toggle</button>
+      </div>
+    </section>
+
+    <section class="panel" id="animate-demo">
+      <h2>Animate demo</h2>
+      <div id="anim-box" class="anim-box"></div>
+      <div style="margin-top:8px;">
+        <button id="step-animate">Step animate</button>
+        <button id="combo-animate">Combined animate</button>
+        <button id="reset-anim">Reset</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Ibrahim SE 2437</p>
+  </footer>
+</body>
+</html>
